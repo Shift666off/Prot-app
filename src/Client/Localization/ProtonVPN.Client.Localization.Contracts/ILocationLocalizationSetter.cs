@@ -19,25 +19,9 @@
 
 namespace ProtonVPN.Client.Localization.Contracts;
 
-public interface ILocalizationProvider
+public interface ILocationLocalizationSetter
 {
-    string Get(string resourceKey);
+    void SetCityNames(Dictionary<string, Dictionary<string, string?>> cities);
 
-    string GetFormat(string resourceKey, object arg0);
-
-    string GetFormat(string resourceKey, object arg0, object arg1);
-
-    string GetFormat(string resourceKey, object arg0, object arg1, object arg2);
-
-    string GetFormat(string resourceKey, params object[] args);
-
-    string GetPlural(string resourceKey, long number);
-
-    string GetPluralFormat(string resourceKey, long number);
-
-    void ForceCurrentLanguageForPluralProvider();
-
-    string GetCityName(string? englishCityName, string countryCode);
-
-    string GetStateName(string? englishStateName, string countryCode);
-}
+    void SetStateNames(Dictionary<string, Dictionary<string, string?>> states);
+}                                                                                                   
