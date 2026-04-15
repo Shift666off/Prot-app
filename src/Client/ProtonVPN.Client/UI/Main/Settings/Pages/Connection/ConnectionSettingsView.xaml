@@ -162,6 +162,23 @@ along with ProtonVPN.  If not, see <https://www.gnu.org/licenses/>.
                         </custom:GridSettingsCard.ActionIcon>
                     </custom:GridSettingsCard>
 
+<custom:GridSettingsCard
+    AutomationProperties.AutomationId="Socks5SettingsCard"
+    Command="{x:Bind ViewModel.NavigateToSocks5SettingsPageCommand, Mode=OneTime}"
+    Header="SOCKS5 Proxy"
+    IsClickEnabled="True"
+    Style="{StaticResource GridSettingsCardStyle}">
+
+    <custom:GridSettingsCard.FeatureIcon>
+        <pathicons:Sliders />
+    </custom:GridSettingsCard.FeatureIcon>
+
+    <custom:GridSettingsCard.ActionIcon>
+        <pathicons:ChevronRight />
+    </custom:GridSettingsCard.ActionIcon>
+
+</custom:GridSettingsCard>
+
                 </toolkit:UniformGrid>
 
                 <toolkit:SettingsCard AutomationProperties.AutomationId="AdvancedSettingsCard"
