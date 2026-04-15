@@ -4,8 +4,8 @@ namespace ProtonVPN.Client.UI.Main.Settings.Pages.Connection
 {
     public partial class Socks5SettingsPageViewModel : ActivatableViewModelBase
     {
-        public Socks5SettingsPageViewModel(IViewModelHelper viewModelHelper)
-            : base(viewModelHelper)
+        public Socks5SettingsPageViewModel()
+            : base(null)
         {
         }
 
