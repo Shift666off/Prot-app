@@ -229,4 +229,10 @@ public partial class ConnectionSettingsViewModel : ActivatableViewModelBase,
     {
         await _settingsViewNavigator.NavigateToAdvancedSettingsViewAsync();
     }
+
+    [RelayCommand]
+private async Task NavigateToSocks5SettingsPageAsync()
+{Тат
+    await _settingsViewNavigator.NavigateToAsync(typeof(Socks5SettingsPageView));
+}
 }
