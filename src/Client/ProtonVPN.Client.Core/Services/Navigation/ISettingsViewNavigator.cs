@@ -42,6 +42,8 @@ public interface ISettingsViewNavigator : IViewNavigator
     Task<bool> NavigateToPortForwardingSettingsViewAsync(bool isDirectNavigation = false);
 
     Task<bool> NavigateToSplitTunnelingSettingsViewAsync(bool isDirectNavigation = false);
+   
+    Task<bool> NavigateToSocks5SettingsPageAsync(bool isDirectNavigation = false);
 
     Task<bool> NavigateToVpnAcceleratorSettingsViewAsync();
 
