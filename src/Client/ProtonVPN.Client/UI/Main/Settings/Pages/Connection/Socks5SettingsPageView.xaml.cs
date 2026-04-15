@@ -2,7 +2,7 @@ using Microsoft.UI.Xaml.Controls;
 
 namespace ProtonVPN.Client.UI.Main.Settings.Pages.Connection
 {
-    public sealed partial class Socks5SettingsPageView : UserControl
+    public sealed partial class Socks5SettingsPageView : Page
     {
         public Socks5SettingsPageView()
         {
