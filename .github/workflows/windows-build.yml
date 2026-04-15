@@ -1,1 +1,40 @@
 
+name: Windows Build
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ master ]
+  pull_request:
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.x
+
+      - name: Install Windows App SDK
+        run: |
+          winget install --id Microsoft.WindowsAppSDK.1.5 --accept-package-agreements --accept-source-agreements
+
+      - name: Restore NuGet packages
+        run: dotnet restore ProtonVPN.slnx
+
+      - name: Build solution
+        run: dotnet build ProtonVPN.slnx -c Release --no-restore
+
+      - name: Publish MSIX package
+        run: dotnet publish ProtonVPN.slnx -c Release -o publish
+
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: ProtonVPN-Windows-Build
+          path: publish
