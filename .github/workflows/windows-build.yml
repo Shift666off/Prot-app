@@ -20,10 +20,6 @@ jobs:
         with:
           dotnet-version: 8.0.x
 
-      - name: Install Windows App SDK
-        run: |
-          winget install --id Microsoft.WindowsAppSDK.1.5 --accept-package-agreements --accept-source-agreements
-
       - name: Restore NuGet packages
         run: dotnet restore ProtonVPN.slnx
 
