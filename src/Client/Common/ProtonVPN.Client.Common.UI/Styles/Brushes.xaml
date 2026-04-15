@@ -23,6 +23,7 @@ along with ProtonVPN.  If not, see <https://www.gnu.org/licenses/>.
 
     <ResourceDictionary.ThemeDictionaries>
 
+        <!-- LIGHT THEME -->
         <ResourceDictionary x:Key="Light">
 
             <!--  Brushes  -->
@@ -81,7 +82,7 @@ along with ProtonVPN.  If not, see <https://www.gnu.org/licenses/>.
             <SolidColorBrush x:Key="BackdropNormColorBrush" Color="{StaticResource BackdropNormColor}" />
             <!--  VPN  -->
             <SolidColorBrush x:Key="VpnGreenColorBrush" Color="{StaticResource VpnGreenColor}" />
-            <SolidColorBrush x:Key="VpnGreenWeakColorBrush" Color="{StaticResource VpnGreenColor}" Opacity="0.3"/>
+            <SolidColorBrush x:Key="VpnGreenWeakColorBrush" Color="{StaticResource VpnGreenColor}" Opacity="0.3" />
             <!--  Gradient  -->
             <LinearGradientBrush x:Key="GradientFadingColorBrush" StartPoint="0,0" EndPoint="0,1">
                 <GradientStop Offset="0" Color="{StaticResource GradientFadingStartColor}" />
@@ -120,11 +121,12 @@ along with ProtonVPN.  If not, see <https://www.gnu.org/licenses/>.
                 <GradientStop Offset="0" Color="{StaticResource GradientUpsellBackgroundStartColor}" />
                 <GradientStop Offset="0.5" Color="{StaticResource GradientUpsellBackgroundEndColor}" />
                 <GradientStop Offset="1" Color="{StaticResource GradientUpsellBackgroundEndColor}" />
-<LinearGradientBrush x:Key="GradientVpnPlanBorderBrushColor" StartPoint="0,0" EndPoint="1,0">
-    <GradientStop Color="#6E4BFF" Offset="0" />
-    <GradientStop Color="#547AEC" Offset="0.5" />
-    <GradientStop Color="#2FCCCF" Offset="1" />
-</LinearGradientBrush>
+            </LinearGradientBrush>
+            <LinearGradientBrush x:Key="GradientVpnPlanBorderBrushColor" StartPoint="0,0" EndPoint="1,0">
+                <GradientStop Color="#6E4BFF" Offset="0" />
+                <GradientStop Color="#547AEC" Offset="0.5" />
+                <GradientStop Color="#2FCCCF" Offset="1" />
+            </LinearGradientBrush>
             <LinearGradientBrush x:Key="GradientProtonPlanBorderBrushColor" StartPoint="0,0" EndPoint="1,0">
                 <GradientStop Color="#547AEC" Offset="0" />
                 <GradientStop Color="#A95DF4" Offset="1" />
@@ -171,7 +173,7 @@ along with ProtonVPN.  If not, see <https://www.gnu.org/licenses/>.
                           TintColor="{StaticResource BackgroundNormColor}"
                           TintOpacity="0.6" />
 
-            <!--  Pane Overlay  -->            
+            <!--  Pane Overlay  -->
             <AcrylicBrush x:Key="PaneOverlayBackgroundColorBrush"
                           FallbackColor="{StaticResource BackgroundNormColor}"
                           TintColor="{StaticResource BackgroundNormColor}"
@@ -197,6 +199,7 @@ along with ProtonVPN.  If not, see <https://www.gnu.org/licenses/>.
 
         </ResourceDictionary>
 
+        <!-- DARK THEME -->
         <ResourceDictionary x:Key="Dark">
 
             <!--  Brushes  -->
@@ -255,7 +258,7 @@ along with ProtonVPN.  If not, see <https://www.gnu.org/licenses/>.
             <SolidColorBrush x:Key="BackdropNormColorBrush" Color="{StaticResource BackdropNormColor}" />
             <!--  VPN  -->
             <SolidColorBrush x:Key="VpnGreenColorBrush" Color="{StaticResource VpnGreenColor}" />
-            <SolidColorBrush x:Key="VpnGreenWeakColorBrush" Color="{StaticResource VpnGreenColor}" Opacity="0.3"/>
+            <SolidColorBrush x:Key="VpnGreenWeakColorBrush" Color="{StaticResource VpnGreenColor}" Opacity="0.3" />
             <!--  Gradient  -->
             <LinearGradientBrush x:Key="GradientFadingColorBrush" StartPoint="0,0" EndPoint="0,1">
                 <GradientStop Offset="0" Color="{StaticResource GradientFadingStartColor}" />
@@ -298,7 +301,7 @@ along with ProtonVPN.  If not, see <https://www.gnu.org/licenses/>.
             <LinearGradientBrush x:Key="GradientVpnPlanBorderBrushColor" StartPoint="0,0" EndPoint="1,0">
                 <GradientStop Color="#6E4BFF" Offset="0" />
                 <GradientStop Color="#547AEC" Offset="0.5" />
-                <GradientStop Color="#2FCCCf" Offset="1" />
+                <GradientStop Color="#2FCCCF" Offset="1" />
             </LinearGradientBrush>
             <LinearGradientBrush x:Key="GradientProtonPlanBorderBrushColor" StartPoint="0,0" EndPoint="1,0">
                 <GradientStop Color="#547AEC" Offset="0" />
@@ -346,7 +349,7 @@ along with ProtonVPN.  If not, see <https://www.gnu.org/licenses/>.
                           TintColor="{StaticResource BackgroundNormColor}"
                           TintOpacity="0.6" />
 
-            <!--  Pane Overlay  -->            
+            <!--  Pane Overlay  -->
             <AcrylicBrush x:Key="PaneOverlayBackgroundColorBrush"
                           FallbackColor="{StaticResource BackgroundNormColor}"
                           TintColor="{StaticResource BackgroundNormColor}"
@@ -357,13 +360,13 @@ along with ProtonVPN.  If not, see <https://www.gnu.org/licenses/>.
                           FallbackColor="{StaticResource BackgroundNormColor}"
                           TintColor="#00000000"
                           TintOpacity="0" />
-            
+
             <AcrylicBrush x:Key="PaneOverlayDisabledBackgroundColorBrush"
                           FallbackColor="{StaticResource BackgroundNormColor}"
                           TintColor="{StaticResource BackgroundNormColor}"
                           TintOpacity="0.2" />
             <SolidColorBrush x:Key="PaneOverlayDisabledBorderColorBrush" Opacity="0.60" Color="{StaticResource BorderWeakColor}" />
-            
+
             <AcrylicBrush x:Key="FlyoutOverlayBackgroundColorBrush"
                           FallbackColor="{StaticResource BackgroundNormColor}"
                           TintColor="{StaticResource BackgroundNormColor}"
@@ -371,6 +374,6 @@ along with ProtonVPN.  If not, see <https://www.gnu.org/licenses/>.
             <SolidColorBrush x:Key="FlyoutOverlayBorderColorBrush" Opacity="0.82" Color="{StaticResource BorderWeakColor}" />
 
         </ResourceDictionary>
-        
+
     </ResourceDictionary.ThemeDictionaries>
 </ResourceDictionary>
