@@ -120,12 +120,11 @@ along with ProtonVPN.  If not, see <https://www.gnu.org/licenses/>.
                 <GradientStop Offset="0" Color="{StaticResource GradientUpsellBackgroundStartColor}" />
                 <GradientStop Offset="0.5" Color="{StaticResource GradientUpsellBackgroundEndColor}" />
                 <GradientStop Offset="1" Color="{StaticResource GradientUpsellBackgroundEndColor}" />
-            </LinearGradientBrush>
-            <LinearGradientBrush x:Key="GradientVpnPlanBorderBrushColor" StartPoint="0,0" EndPoint="1,0">
-                <GradientStop Color="#6E4BFF" Offset="1" />
-                <GradientStop Color="#547AEC" Offset="1" />
-                <GradientStop Color="#2FCCCf" Offset="1" />
-            </LinearGradientBrush>
+<LinearGradientBrush x:Key="GradientVpnPlanBorderBrushColor" StartPoint="0,0" EndPoint="1,0">
+    <GradientStop Color="#6E4BFF" Offset="0" />
+    <GradientStop Color="#547AEC" Offset="0.5" />
+    <GradientStop Color="#2FCCCF" Offset="1" />
+</LinearGradientBrush>
             <LinearGradientBrush x:Key="GradientProtonPlanBorderBrushColor" StartPoint="0,0" EndPoint="1,0">
                 <GradientStop Color="#547AEC" Offset="0" />
                 <GradientStop Color="#A95DF4" Offset="1" />
