@@ -1,1 +1,40 @@
 
+<UserControl
+    x:Class="ProtonVPN.Client.UI.Main.Settings.Pages.Connection.Socks5SettingsPageView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:custom="using:ProtonVPN.Client.Common.UI.Controls.Custom">
+
+    <StackPanel Spacing="16">
+
+        <custom:SettingsSectionControl Title="SOCKS5 Proxy">
+
+            <StackPanel Spacing="12">
+
+                <ToggleSwitch
+                    Header="Enable SOCKS5 proxy"
+                    IsOn="{Binding SocksProxyEnabled, Mode=TwoWay}" />
+
+                <TextBox
+                    Header="Host"
+                    Text="{Binding SocksProxyHost, Mode=TwoWay}" />
+
+                <TextBox
+                    Header="Port"
+                    Text="{Binding SocksProxyPort, Mode=TwoWay}" />
+
+                <TextBox
+                    Header="Username"
+                    Text="{Binding SocksProxyUsername, Mode=TwoWay}" />
+
+                <PasswordBox
+                    Header="Password"
+                    Password="{Binding SocksProxyPassword, Mode=TwoWay}" />
+
+            </StackPanel>
+
+        </custom:SettingsSectionControl>
+
+    </StackPanel>
+
+</UserControl>
