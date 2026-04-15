@@ -2,7 +2,7 @@ using ProtonVPN.Client.Core.Bases.ViewModels;
 
 namespace ProtonVPN.Client.UI.Main.Settings.Pages.Connection
 {
-    public partial class Socks5SettingsPageViewModel : ActivatableViewModelBase
+    public partial class Socks5SettingsPageViewModel : PageViewModelBase
     {
         public Socks5SettingsPageViewModel()
             : base(null)
